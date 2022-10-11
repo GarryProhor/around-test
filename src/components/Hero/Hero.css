@@ -11,16 +11,14 @@
     align-items: center;
     gap: 5px;
     margin-bottom: 20px;
+    color: var(--cadet);
 }
-
-.hero-subtitle { color: var(--yellow-green); }
 
 .hero-subtitle span {
     color: var(--dark-jungle-green);
     font-size: var(--fs-5);
     font-weight: var(--fw-700);
 }
-
 .hero-title { margin-bottom: 20px; }
 
 .hero-text {

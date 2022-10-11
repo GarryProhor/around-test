@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutImg from "../../assets/images/pexels-scott-webb-212942.jpg";
+import './About.css';
 
 const AboutSection = () => {
     return (
