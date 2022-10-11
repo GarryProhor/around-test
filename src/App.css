@@ -497,39 +497,7 @@
      * HEADER
      */
 
-    .header-top { padding-block: 5px; }
 
-    .header-top .wrapper { margin-left: auto; }
-
-    .header-top-social-list { gap: 12px; }
-
-    .header-top-social-link { font-size: 1rem; }
-
-    .header-top-btn { padding: 10px 20px; }
-
-    .header-bottom-actions {
-        all: unset;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .header-bottom .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header-bottom-actions-btn{ margin-bottom: 0; }
-
-    .header-bottom-actions-btn span { display: none; }
-
-    .header-bottom-actions-btn {
-        background: var(--white);
-        width: 50px;
-        height: 50px;
-        box-shadow: var(--shadow-2);
-    }
 
 
     /**
@@ -613,24 +581,6 @@
     .btn { padding: 15px 40px; }
 
 
-
-    /**
-     * HEADER
-     */
-
-    .header-top-list,
-    .header-top .wrapper { gap: 30px; }
-
-
-    /**
-     * ABOUT
-     */
-
-
-
-
-
-
     /**
      * PROPERTY
      */
@@ -712,53 +662,7 @@
 
     .has-scrollbar > li { min-width: calc(33.33% - 16.66px); }
 
-    /**
-     * HEADER
-     */
 
-    .header-bottom { padding-block: 30px; }
-
-    .header-bottom-actions-btn:last-child,
-    .navbar-top,
-    .overlay { display: none; }
-
-    .navbar,
-    .navbar.active { all: unset; }
-
-    .navbar-list {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .navbar-link {
-        color: var(--dark-jungle-green);
-        --fs-5: 1.125rem;
-        text-transform: capitalize;
-    }
-
-    .header { padding-bottom: 114px; }
-
-    .header-bottom {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .header.active .header-bottom {
-        position: fixed;
-        bottom: auto;
-        top: -94px;
-        padding-block: 20px;
-        box-shadow: 0 10px 50px hsla(237, 71%, 52%, 0.2);
-        animation: slideDown 0.25s ease-out forwards;
-    }
-
-    @keyframes slideDown {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(100%); }
-    }
 
     /**
      * FEATURES
