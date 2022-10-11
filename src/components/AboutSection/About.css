@@ -9,16 +9,10 @@
     max-width: max-content;
     width: 100%;
 }
-
-.about-banner .abs-img {
-    position: absolute;
-    bottom: 100px;
-    left: 15px;
-    width: 50%;
-    border-radius: 4px;
+.about-content .section-subtitle {
+    padding: 5px 20px;
+    margin-inline: 0;
 }
-
-.about .section-subtitle { margin-inline: 0; }
 
 .about .section-title {
     --text-align: left;
@@ -75,15 +69,17 @@
     margin-bottom: 40px;
 }
 
-.about .btn {
+.about-content .btn {
     max-width: max-content;
     --text-transform: uppercase;
     background: var(--misty-rose);
     color: var(--raisin-black-1);
-    font-weight: var(--fw-700);
+    font-weight: var(--fw-600);
 }
-.about .btn:hover{
+.about-content .btn:hover{
     color: var(--white);
+    font-weight: var(--fw-600);
+
 }
 
 

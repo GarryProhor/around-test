@@ -7,7 +7,7 @@ const Cta = () => {
 
                 <div className="cta-card">
                     <div className="card-content">
-                        <h2 className="h2 card-title">Мечтаете о саде мечты?</h2>
+                        <h2 className="h2 card-title">Мечтаете о саде?</h2>
 
                         <p className="card-text">Мы поможем вам реализовать вашу мечту</p>
                     </div>

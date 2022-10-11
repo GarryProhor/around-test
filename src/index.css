@@ -136,8 +136,8 @@ button, a { transition: var(--transition); }
 
 .btn:is(:hover, :focus) {
     background: var(--black);
-    color: var(--dark-jungle-green);
-    border-color: var(--black);
+    color: var(--white);
+    border: none;
 }
 
 .btn::before {
@@ -156,7 +156,6 @@ button, a { transition: var(--transition); }
     width: 100%;
     background: var(--cadet);
     border-radius: 5px;
-
 }
 
 
