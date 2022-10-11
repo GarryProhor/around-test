@@ -1,87 +1,5 @@
 
 /*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-
-/*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
-
-.service {
-    background: var(--cultured-2);
-    padding-block: var(--section-padding);
-}
-
-.service-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.service-card {
-    position: relative;
-    background: var(--white);
-
-    text-align: center;
-    padding: 40px 30px;
-    box-shadow: var(--shadow-2);
-}
-
-.service-card .card-icon {
-    margin-inline: auto;
-    margin-bottom: 20px;
-}
-.card-icon{
-    display: flex;
-    justify-content: center;
-}
-.card-icon img{
-    width: 50px;
-    height: 50px;
-}
-
-.service-card .card-title { margin-bottom: 15px; }
-
-.service-card .card-title > a:is(:hover, :focus) { color: var(--orange-soda); }
-
-.service-card .card-text {
-    color: var(--cadet);
-    font-size: var(--fs-5);
-    line-height: 1.8;
-    margin-bottom: 25px;
-}
-
-.service-card .card-link {
-    color: var(--opal);
-    font-size: var(--fs-5);
-    font-weight: var(--fw-600);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.service-card:is(:hover, :focus) .card-link { color: var(--orange-soda); }
-
-.service-card::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 4px;
-    background: var(--orange-soda);
-    transition: var(--transition);
-}
-
-.service-card:is(:hover, :focus)::after { width: 100%; }
-
-
-
-
-
-/*-----------------------------------*\
   #PROPERTY
 \*-----------------------------------*/
 
@@ -138,7 +56,7 @@
     gap: 4px;
 }
 
-.banner-actions-btn ion-icon { font-size: 16px; }
+.banner-actions-btn { font-size: 16px; }
 
 .banner-actions-btn:first-child { margin-right: auto; }
 
@@ -194,9 +112,9 @@
     margin-right: 20px;
 }
 
-.property-card .card-item :is(strong, ion-icon) { display: inline-block; }
+.property-card .card-item :is(strong) { display: inline-block; }
 
-.property-card .card-item ion-icon {
+.property-card .card-item {
     margin-left: 2px;
     margin-bottom: -2px;
 }
@@ -310,7 +228,7 @@
     font-size: 28px;
 }
 
-.features-card .card-icon ion-icon { --ionicon-stroke-width: 20px; }
+.features-card .card-icon{ --ionicon-stroke-width: 20px; }
 
 .features-card .card-title {
     color: var(--dark-jungle-green);
@@ -386,7 +304,7 @@
     transition: var(--transition);
 }
 
-.blog-card :is(.card-meta-link, .publish-date) ion-icon { color: var(--orange-soda); }
+.blog-card :is(.card-meta-link, .publish-date){ color: var(--orange-soda); }
 
 .blog-card .card-meta-link:is(:hover, :focus) { color: var(--orange-soda); }
 
@@ -516,14 +434,6 @@
 
 
     /**
-     * SERVICE
-     */
-
-    .service-list > li { width: calc(50% - 15px); }
-
-
-
-    /**
      * PROPERTY
      */
 
@@ -610,7 +520,7 @@
         align-items: center;
     }
 
-    .header-bottom-actions-btn ion-icon { margin-bottom: 0; }
+    .header-bottom-actions-btn{ margin-bottom: 0; }
 
     .header-bottom-actions-btn span { display: none; }
 
@@ -720,13 +630,6 @@
 
 
 
-    /**
-     * SERVICE
-     */
-
-    .service-list > li { width: calc(33.33% - 20px); }
-
-
 
     /**
      * PROPERTY
@@ -772,14 +675,6 @@
 
     .cta-card :is(.card-content, .cta-btn) { margin: 0; }
 
-
-
-    /**
-     * FOOTER
-     */
-
-
-
 }
 
 
@@ -816,8 +711,6 @@
     .container { max-width: 1200px; }
 
     .has-scrollbar > li { min-width: calc(33.33% - 16.66px); }
-
-
 
     /**
      * HEADER
@@ -867,13 +760,6 @@
         100% { transform: translateY(100%); }
     }
 
-
-
-    /**
-     * HERO
-     */
-
-
     /**
      * FEATURES
      */
@@ -896,13 +782,4 @@
         --fs-2: 2.25rem;
         padding-inline: 60px;
     }
-
-
-
-    /**
-     * FOOTER
-     */
-
-
-
 }

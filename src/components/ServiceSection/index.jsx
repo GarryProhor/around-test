@@ -1,7 +1,8 @@
 import React from 'react';
-import img1 from "../../assets/images/1.jpg";
-import img2 from "../../assets/images/2.jpg";
-import img3 from "../../assets/images/3.jpg";
+import './ServiceSection.css';
+import img1 from "../../assets/images/1.svg";
+import img2 from "../../assets/images/2.svg";
+import img3 from "../../assets/images/3.svg";
 
 const ServiceSection = () => {
     return (
