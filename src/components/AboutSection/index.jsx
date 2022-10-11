@@ -1,6 +1,7 @@
 import React from 'react';
 import aboutImg from "../../assets/images/pexels-scott-webb-212942.jpg";
 import './About.css';
+import {aboutItem} from "../../assets/data/aboutItem";
 
 const AboutSection = () => {
     return (
@@ -9,8 +10,6 @@ const AboutSection = () => {
 
                 <figure className="about-banner">
                     <img src={aboutImg} alt="About us"/>
-
-
                 </figure>
 
                 <div className="about-content">
@@ -23,41 +22,17 @@ const AboutSection = () => {
                         Что же такое ландшафтный дизайн?
                     </p>
 
-
                     <ul className="about-list">
-
-                        <li className="about-item">
-                            <div className="about-item-icon">
-                                <i className="ri-plant-line"></i>
-                            </div>
-
-                            <p className="about-item-text">Умный дизайн сада</p>
-                        </li>
-
-                        <li className="about-item">
-                            <div className="about-item-icon">
-                                <i className="ri-hand-heart-line"></i>
-                            </div>
-
-                            <p className="about-item-text">Красивая сцена вокруг</p>
-                        </li>
-
-                        <li className="about-item">
-                            <div className="about-item-icon">
-                                <i className="ri-mental-health-line"></i>
-                            </div>
-
-                            <p className="about-item-text">Исключительный образ жизни</p>
-                        </li>
-
-                        <li className="about-item">
-                            <div className="about-item-icon">
-                                <i className="ri-hearts-line"></i>
-                            </div>
-
-                            <p className="about-item-text">Постоянная поддержака</p>
-                        </li>
-
+                        {
+                            aboutItem.map(({icon, text}) => (
+                                <li key={icon} className="about-item">
+                                    <div className="about-item-icon">
+                                        <i className={icon}></i>
+                                    </div>
+                                    <p className="about-item-text">{text}</p>
+                                </li>
+                            ))
+                        }
                     </ul>
 
                     <p className="callout">
@@ -69,9 +44,7 @@ const AboutSection = () => {
                     </p>
 
                     <a href="#service" className="btn">Наши услуги</a>
-
                 </div>
-
             </div>
         </section>
     );
