@@ -15,8 +15,7 @@ const Cta = () => {
 
                     <button className="btn cta-btn">
                         <span>Исследуйте свойства</span>
-
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                        <i className="ri-reply-line"></i>
                     </button>
                 </div>
 
