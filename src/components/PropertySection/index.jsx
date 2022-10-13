@@ -6,9 +6,9 @@ const PropertySection = () => {
         <section className="property" id="property">
             <div className="container">
 
-                <p className="section-subtitle">Properties</p>
+                <p className="section-subtitle">Популярное</p>
 
-                <h2 className="h2 section-title">Featured Listings</h2>
+                <h2 className="h2 section-title">Клиенты предпочитают</h2>
 
                 <ul className="property-list has-scrollbar">
 
