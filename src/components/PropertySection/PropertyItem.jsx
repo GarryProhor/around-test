@@ -1,382 +1,49 @@
 import React from 'react';
-import image from '../../assets/images/banner_6.png';
-import author from '../../assets/images/author.jpg';
+import {Link} from "react-router-dom";
+import { motion } from "framer-motion"
 
-
-const PropertyItem = () => {
+const PropertyItem = ({item}) => {
+    const {name, image, text, complexity, perennial} = item;
     return (
       <>
           <li>
               <div className="property-card">
-
                   <figure className="card-banner">
-
-                      <a href="#">
-                          <img src={image} alt="New Apartment Nice View"
+                      <Link to="#">
+                          <img src={image} alt={name}
                                className="w-100"/>
-                      </a>
-
-
-
+                      </Link>
                       <div className="banner-actions">
-                          <button className="banner-actions-btn">
+                          <motion.button whileHover={{scale: 1.1}}  className="banner-actions-btn">
                               <i className="ri-plant-line"></i>
-                              <address>ЦВЕТЫ 1</address>
-                          </button>
-
+                              <address>{name}</address>
+                          </motion.button>
                       </div>
-
                   </figure>
-
                   <div className="card-content">
                       <h3 className="h3 card-title">
-                          <a href="#">Цветы 1</a>
+                          <Link to="#">{name}</Link>
                       </h3>
-
-                      <p className="card-text">
-                          Цветок состоит из стеблевой части (цветоножка и цветоложе), листовой части (чашелистики, лепестки) и генеративной части (тычинки, пестик или пестики). Цветок занимает апикальное положение, но при этом он может располагаться как на верхушке главного побега, так и бокового.
-                      </p>
-
+                      <p className="card-text">{text}</p>
                       <ul className="card-list">
-
                           <li className="card-item">
-                              <strong>Многолетний</strong>
-
-                              <i className="ri-quill-pen-line"></i>
-
-                              <span>Да</span>
+                              <div className='d-flex align-content-center gap-1'>
+                                  <strong>Многолетний</strong>
+                                  <i className="ri-quill-pen-line"></i>
+                              </div>
+                              <span>{complexity}</span>
                           </li>
-
                           <li className="card-item">
-                              <strong>Сложность ухода</strong>
-
-                              <i className="ri-star-half-line"></i>
-
-                              <span>Просто</span>
+                              <div className='d-flex align-content-center gap-1'>
+                                  <strong>Сложность ухода</strong>
+                                  <i className="ri-star-half-line"></i>
+                              </div>
+                              <span>{perennial}</span>
                           </li>
-
                       </ul>
-
                   </div>
-
-                  <div className="card-footer">
-
-                      <div className="card-author">
-
-                          <figure className="author-avatar">
-                              <img src={author} alt="Irina Grushnik" className="w-100"/>
-                          </figure>
-
-                          <div>
-                              <p className="author-name">
-                                  <a href="#">Ирина Грушник</a>
-                              </p>
-
-                              <p className="author-title">Ландшафтный дизайнер</p>
-                          </div>
-
-                      </div>
-                  </div>
-
               </div>
           </li>
-          <li>
-              <div className="property-card">
-
-                  <figure className="card-banner">
-
-                      <a href="#">
-                          <img src={image} alt="New Apartment Nice View"
-                               className="w-100"/>
-                      </a>
-
-
-
-                      <div className="banner-actions">
-                          <button className="banner-actions-btn">
-                              <i className="ri-plant-line"></i>
-                              <address>ЦВЕТЫ 1</address>
-                          </button>
-
-                      </div>
-
-                  </figure>
-
-                  <div className="card-content">
-                      <h3 className="h3 card-title">
-                          <a href="#">Цветы 1</a>
-                      </h3>
-
-                      <p className="card-text">
-                          Цветок состоит из стеблевой части (цветоножка и цветоложе), листовой части (чашелистики, лепестки) и генеративной части (тычинки, пестик или пестики). Цветок занимает апикальное положение, но при этом он может располагаться как на верхушке главного побега, так и бокового.
-                      </p>
-
-                      <ul className="card-list">
-
-                          <li className="card-item">
-                              <strong>Многолетний</strong>
-
-                              <i className="ri-quill-pen-line"></i>
-
-                              <span>Да</span>
-                          </li>
-
-                          <li className="card-item">
-                              <strong>Сложность ухода</strong>
-
-                              <i className="ri-star-half-line"></i>
-
-                              <span>Просто</span>
-                          </li>
-
-                      </ul>
-
-                  </div>
-
-                  <div className="card-footer">
-
-                      <div className="card-author">
-
-                          <figure className="author-avatar">
-                              <img src={author} alt="Irina Grushnik" className="w-100"/>
-                          </figure>
-
-                          <div>
-                              <p className="author-name">
-                                  <a href="#">Ирина Грушник</a>
-                              </p>
-
-                              <p className="author-title">Ландшафтный дизайнер</p>
-                          </div>
-
-                      </div>
-                  </div>
-
-              </div>
-          </li>
-          <li>
-              <div className="property-card">
-
-                  <figure className="card-banner">
-
-                      <a href="#">
-                          <img src={image} alt="New Apartment Nice View"
-                               className="w-100"/>
-                      </a>
-
-
-
-                      <div className="banner-actions">
-                          <button className="banner-actions-btn">
-                              <i className="ri-plant-line"></i>
-                              <address>ЦВЕТЫ 1</address>
-                          </button>
-
-                      </div>
-
-                  </figure>
-
-                  <div className="card-content">
-                      <h3 className="h3 card-title">
-                          <a href="#">Цветы 1</a>
-                      </h3>
-
-                      <p className="card-text">
-                          Цветок состоит из стеблевой части (цветоножка и цветоложе), листовой части (чашелистики, лепестки) и генеративной части (тычинки, пестик или пестики). Цветок занимает апикальное положение, но при этом он может располагаться как на верхушке главного побега, так и бокового.
-                      </p>
-
-                      <ul className="card-list">
-
-                          <li className="card-item">
-                              <strong>Многолетний</strong>
-
-                              <i className="ri-quill-pen-line"></i>
-
-                              <span>Да</span>
-                          </li>
-
-                          <li className="card-item">
-                              <strong>Сложность ухода</strong>
-
-                              <i className="ri-star-half-line"></i>
-
-                              <span>Просто</span>
-                          </li>
-
-                      </ul>
-
-                  </div>
-
-                  <div className="card-footer">
-
-                      <div className="card-author">
-
-                          <figure className="author-avatar">
-                              <img src={author} alt="Irina Grushnik" className="w-100"/>
-                          </figure>
-
-                          <div>
-                              <p className="author-name">
-                                  <a href="#">Ирина Грушник</a>
-                              </p>
-
-                              <p className="author-title">Ландшафтный дизайнер</p>
-                          </div>
-
-                      </div>
-                  </div>
-
-              </div>
-          </li>
-          <li>
-              <div className="property-card">
-
-                  <figure className="card-banner">
-
-                      <a href="#">
-                          <img src={image} alt="New Apartment Nice View"
-                               className="w-100"/>
-                      </a>
-
-
-
-                      <div className="banner-actions">
-                          <button className="banner-actions-btn">
-                              <i className="ri-plant-line"></i>
-                              <address>ЦВЕТЫ 1</address>
-                          </button>
-
-                      </div>
-
-                  </figure>
-
-                  <div className="card-content">
-                      <h3 className="h3 card-title">
-                          <a href="#">Цветы 1</a>
-                      </h3>
-
-                      <p className="card-text">
-                          Цветок состоит из стеблевой части (цветоножка и цветоложе), листовой части (чашелистики, лепестки) и генеративной части (тычинки, пестик или пестики). Цветок занимает апикальное положение, но при этом он может располагаться как на верхушке главного побега, так и бокового.
-                      </p>
-
-                      <ul className="card-list">
-
-                          <li className="card-item">
-                              <strong>Многолетний</strong>
-
-                              <i className="ri-quill-pen-line"></i>
-
-                              <span>Да</span>
-                          </li>
-
-                          <li className="card-item">
-                              <strong>Сложность ухода</strong>
-
-                              <i className="ri-star-half-line"></i>
-
-                              <span>Просто</span>
-                          </li>
-
-                      </ul>
-
-                  </div>
-
-                  <div className="card-footer">
-
-                      <div className="card-author">
-
-                          <figure className="author-avatar">
-                              <img src={author} alt="Irina Grushnik" className="w-100"/>
-                          </figure>
-
-                          <div>
-                              <p className="author-name">
-                                  <a href="#">Ирина Грушник</a>
-                              </p>
-
-                              <p className="author-title">Ландшафтный дизайнер</p>
-                          </div>
-
-                      </div>
-                  </div>
-
-              </div>
-          </li>
-          <li>
-              <div className="property-card">
-
-                  <figure className="card-banner">
-
-                      <a href="#">
-                          <img src={image} alt="New Apartment Nice View"
-                               className="w-100"/>
-                      </a>
-
-
-
-                      <div className="banner-actions">
-                          <button className="banner-actions-btn">
-                              <i className="ri-plant-line"></i>
-                              <address>ЦВЕТЫ 1</address>
-                          </button>
-
-                      </div>
-
-                  </figure>
-
-                  <div className="card-content">
-                      <h3 className="h3 card-title">
-                          <a href="#">Цветы 1</a>
-                      </h3>
-
-                      <p className="card-text">
-                          Цветок состоит из стеблевой части (цветоножка и цветоложе), листовой части (чашелистики, лепестки) и генеративной части (тычинки, пестик или пестики). Цветок занимает апикальное положение, но при этом он может располагаться как на верхушке главного побега, так и бокового.
-                      </p>
-
-                      <ul className="card-list">
-
-                          <li className="card-item">
-                              <strong>Многолетний</strong>
-
-                              <i className="ri-quill-pen-line"></i>
-
-                              <span>Да</span>
-                          </li>
-
-                          <li className="card-item">
-                              <strong>Сложность ухода</strong>
-
-                              <i className="ri-star-half-line"></i>
-
-                              <span>Просто</span>
-                          </li>
-
-                      </ul>
-
-                  </div>
-
-                  <div className="card-footer">
-
-                      <div className="card-author">
-
-                          <figure className="author-avatar">
-                              <img src={author} alt="Irina Grushnik" className="w-100"/>
-                          </figure>
-
-                          <div>
-                              <p className="author-name">
-                                  <a href="#">Ирина Грушник</a>
-                              </p>
-
-                              <p className="author-title">Ландшафтный дизайнер</p>
-                          </div>
-
-                      </div>
-                  </div>
-
-              </div>
-          </li>
-
       </>
     );
 };

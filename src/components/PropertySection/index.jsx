@@ -1,5 +1,7 @@
 import React from 'react';
 import PropertyItem from "./PropertyItem";
+import './Property.css';
+import {propertyList} from "../../assets/data/propertyList";
 
 const PropertySection = () => {
     return (
@@ -11,9 +13,9 @@ const PropertySection = () => {
                 <h2 className="h2 section-title">Клиенты предпочитают</h2>
 
                 <ul className="property-list has-scrollbar">
-
-                    <PropertyItem />
-
+                    {
+                        propertyList.map((item) => <PropertyItem key={item.id} item={item}/>)
+                    }
                 </ul>
 
             </div>

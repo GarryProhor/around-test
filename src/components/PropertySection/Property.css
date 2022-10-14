@@ -1,0 +1,119 @@
+.property { padding-block: var(--section-padding); }
+
+.property-card {
+    border: 1px solid var(--alice-blue);
+    box-shadow: var(--shadow-2);
+}
+
+.property-card .card-banner {
+    position: relative;
+    aspect-ratio: 2 / 1.5;
+    overflow: hidden;
+}
+
+.property-card .card-banner a { height: 100%; }
+
+.property-card .card-banner img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.property-card:hover .card-banner img { transform: scale(1.1); }
+
+.property-card .card-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, hsla(0, 0%, 0%, 0.95), transparent 30%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.property-card .banner-actions {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    gap: 15px 10px;
+    z-index: 1;
+}
+
+.banner-actions-btn {
+    color: var(--white);
+    font-size: var(--fs-6);
+    line-height: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.banner-actions-btn { font-size: 16px; }
+
+.banner-actions-btn:first-child { margin-right: auto; }
+
+
+.banner-actions-btn address{margin-bottom: 0}
+
+.property-card .card-content {
+    padding: 30px 15px 15px;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+}
+
+.property-card .card-title {
+    --font-weight: var(--fw-600);
+    margin-bottom: 15px;
+}
+
+.property-card .card-title > a:is(:hover, :focus) { color: var(--cadet); }
+
+.property-card .card-text {
+    height: 70px;
+    color: var(--cadet);
+    font-size: var(--fs-5);
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.property-card .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    padding-left: 0;
+}
+
+.property-card .card-item {
+    padding-block: 5px;
+    color: var(--cadet);
+    font-size: var(--fs-5);
+}
+
+.property-card .card-item:not(:last-child) {
+    padding-right: 15px;
+    border-right: 1px solid hsla(0, 0%, 0%, 0.2);
+    margin-right: 20px;
+}
+
+.property-card .card-item :is(strong) { display: inline-block; }
+
+.property-card .card-item {
+    margin-left: 2px;
+    margin-bottom: -2px;
+}
+
+.property-card .card-item span { margin-top: 5px; }
+
+
+@media (min-width: 600px) {
+    .property .container {
+        max-width: unset;
+        padding-inline: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .property-card .card-content { padding-inline: 30px; }
+}
