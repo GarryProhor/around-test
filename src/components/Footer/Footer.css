@@ -70,8 +70,6 @@
     transition: var(--transition);
 }
 
-.contact-link:is(:hover, :focus) span { color: var(--orange-soda); }
-
 .social-list {
     display: flex;
     align-items: center;
@@ -99,8 +97,6 @@
     padding-block: 10px;
 }
 
-.footer-link:is(:hover, :focus) { color: var(--orange-soda); }
-
 .footer-bottom {
     background: var(--raisin-black-2);
     padding-block: 25px;
@@ -116,7 +112,7 @@
     text-decoration: none;
 }
 
-.copyright a:is(:hover, :focus) { color: var(--orange-soda); }
+.copyright a:is(:hover, :focus) { color: var(--white); }
 
 @media only screen and (max-width: 992px){
     .footer-brand .logo img{

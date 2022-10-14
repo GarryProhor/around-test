@@ -1,4 +1,3 @@
-import './App.css';
 import Layout from "./components/Layout";
 
 function App() {
@@ -6,5 +5,4 @@ function App() {
    <Layout />
   );
 }
-
 export default App;
