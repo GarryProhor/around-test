@@ -1,0 +1,34 @@
+.partner{
+    padding-bottom: 50px;
+}
+.partner-list{
+    width: 600px;
+    margin: 0 auto;
+}
+.partner-item{
+    height: 180px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.partner-item img{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .partner{
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .partner-item{
+        height: 50%;
+        width: 50%;
+    }
+    .partner-item img{
+        height: 50%;
+        width: 50%;
+    }
+}

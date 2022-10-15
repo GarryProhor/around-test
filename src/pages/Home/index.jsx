@@ -6,6 +6,7 @@ import ServiceSection from "../../components/ServiceSection";
 import Cta from "../../components/Cta";
 import PropertySection from "../../components/PropertySection";
 import BlogSection from "../../components/BlogSection";
+import Partners from "../../components/Partners";
 
 const Home = () => {
     return (
@@ -21,6 +22,8 @@ const Home = () => {
                     <PropertySection />
 
                     <BlogSection />
+
+                    <Partners />
 
                    <Cta />
 
