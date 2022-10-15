@@ -40,7 +40,8 @@
     --margin-bottom: 100px;
 
 
-    --section-padding: 100px;
+    --section-padding: 50px;
+    --section-padding-sm: 20px;
 
 
     --shadow-1: 0 5px 20px 0 hsla(219, 56%, 21%, 0.1);
@@ -229,7 +230,6 @@ button, a { transition: var(--transition); }
     :root {
         --fs-2: 1.875rem;
     }
-
     .container {
         max-width: 550px;
         margin-inline: auto;
@@ -253,7 +253,9 @@ button, a { transition: var(--transition); }
         --fs-6: 0.875rem;
     }
 
-    .container { max-width: 720px; }
+    .container {
+        max-width: 720px;
+    }
 
     .btn {
         --fs-5: 1rem;

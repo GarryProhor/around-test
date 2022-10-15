@@ -1,6 +1,5 @@
 .hero {
     background: var(--cultured-2);
-    padding-block: var(--section-padding);
 }
 
 .hero-content { margin-bottom: 60px; }
@@ -30,6 +29,9 @@
     margin-bottom: 30px;
 }
 @media only screen and (min-width: 768px){
+    .hero{
+        padding-block: var(--section-padding-sm);
+    }
     .hero-content { max-width: 400px; }
 }
 
@@ -46,6 +48,9 @@
 }
 
 @media only screen and (min-width: 1200px){
+    .hero{
+        padding-block: var(--section-padding);
+    }
     .hero-text {
         padding-left: 30px;
         max-width: 450px;
