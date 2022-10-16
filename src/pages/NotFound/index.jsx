@@ -1,10 +1,12 @@
 import React from 'react';
+import CommonSection from "../../components/CommonSection";
+import Helmet from "../../components/Helmet";
 
 const NotFound = () => {
     return (
-        <div>
-            NotFound
-        </div>
+        <Helmet title='Not found'>
+            <CommonSection title='Страница не найдена'/>
+        </Helmet>
     );
 };
 

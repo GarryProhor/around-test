@@ -1,10 +1,13 @@
 import React from 'react';
+import Helmet from "../../components/Helmet";
+import CommonSection from "../../components/CommonSection";
 
 const About = () => {
     return (
-        <div>
-           About
-        </div>
+        <Helmet title='О нас'>
+          <CommonSection title='О нас'/>
+
+        </Helmet>
     );
 };
 

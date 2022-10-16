@@ -1,10 +1,12 @@
 import React from 'react';
+import CommonSection from "../../components/CommonSection";
+import Helmet from "../../components/Helmet";
 
 const Service = () => {
     return (
-        <div>
-            Service
-        </div>
+        <Helmet title='Услуги'>
+            <CommonSection title='Услуги'/>
+        </Helmet>
     );
 };
 
