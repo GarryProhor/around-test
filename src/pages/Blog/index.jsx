@@ -9,7 +9,7 @@ const Blog = () => {
     return (
         <Helmet title='Блог'>
             <CommonSection title='Блог'/>
-            <section className="blog" id="blog">
+            <section className="blog">
                 <div className="container">
                     <ul className="blog-list">
                         {

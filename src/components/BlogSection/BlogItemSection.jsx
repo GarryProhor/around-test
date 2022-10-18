@@ -20,7 +20,7 @@ const BlogItemSection = ({item}) => {
                                         <span>{author}</span>
                                     </Link>
                             <h3 className="h3 blog-title">
-                                <Link to="/blog">{title}</Link>
+                                <Link to={`/blogs/${title}`}>{title}</Link>
                             </h3>
                         </div>
 
@@ -31,7 +31,7 @@ const BlogItemSection = ({item}) => {
                                 <time dateTime={date}>{date}</time>
                             </div>
 
-                            <a href="#" className="read-more-btn">Читать дальше</a>
+                            <Link to={`/blogs/${title}`} className="read-more-btn">Читать дальше</Link>
                         </div>
 
                     </div>
