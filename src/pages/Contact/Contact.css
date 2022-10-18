@@ -1,0 +1,25 @@
+.contact__info{
+    padding: 25px 0;
+    margin-right: 50px;
+}
+.contact__info p{
+    text-align: left;
+}
+.contact__info:last-child{
+    margin-right: 0;
+}
+.social__link-icon {
+    text-decoration: none;
+    color: var(--prussian-blue);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.social__link-icon:hover {
+    color: var(--prussian-blue);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+}
