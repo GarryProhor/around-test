@@ -19,15 +19,12 @@
     padding: 30px;
 }
 
-.card-meta-list {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    padding-left: 0;
-}
 .card-meta-link {
     text-decoration: none;
+    margin-bottom: 15px;
+}
+.blog-content-top a{
+    color: var(--prussian-blue)!important;
 }
 
 .blog-card :is(.card-meta-link, .publish-date) {

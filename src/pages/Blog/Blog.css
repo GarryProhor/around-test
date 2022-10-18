@@ -1,0 +1,25 @@
+.blog-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media only screen and (max-width: 768px){
+    .blog-list{
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+    .blog-content{
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .blog-content-bottom{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .blog-content-bottom{
+        margin-top: 10px;
+    }
+
+}

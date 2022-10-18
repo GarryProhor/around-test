@@ -12,7 +12,7 @@ const BlogSection = () => {
 
                 <h2 className="h2 section-title">Лента новостей</h2>
 
-                <ul className="blog-list has-scrollbar">
+                <ul className="has-scrollbar">
                     {
                         blogList.map(item => <BlogItemSection key={item.id} item={item}/>)
                     }

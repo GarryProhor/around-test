@@ -15,16 +15,10 @@ const BlogItemSection = ({item}) => {
                     <div className="blog-content">
 
                         <div className="blog-content-top">
-
-                            <ul className="card-meta-list">
-                                <li>
                                     <Link to="#" className="card-meta-link">
                                         <i className="ri-user-heart-line"></i>
                                         <span>{author}</span>
                                     </Link>
-                                </li>
-                            </ul>
-
                             <h3 className="h3 blog-title">
                                 <Link to="/blog">{title}</Link>
                             </h3>
